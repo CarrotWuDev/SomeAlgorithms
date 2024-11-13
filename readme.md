@@ -3,14 +3,14 @@
 ## 模块化
 代码做了高度解耦，你只需要修改`exp`和一些`hyperparameters`就可以看到直观的效果
 
-例如你可以修改下面代码的返回值来得到你想要的函数表达式
+例如你可以修改下面代码的**返回值**来得到你想要的函数表达式
 ```python
 # define exp
 def exp():
     var_x = sympy.symbols("var_x")
     return var_x * var_x - 1, var_x
 ```
-当然你也可以修改初始位置和学习率以及梯度下降次数来查看程序运行结果的不同
+当然你也可以修改**初始位置**、**学习率**以及**梯度下降次数**来查看程序运行结果的不同
 ```python
 def grad_descent(exp, var_x, learning_rate, initial_location, max_times=100):
 ```
@@ -28,3 +28,6 @@ if current_location < -999999 or current_location > 999999:
 可以为函数设定一个区间，这样就可以求取最值了。
 
 good luck!
+
+---
+Please contact me on kekewu0925@gmail.com
